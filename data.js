@@ -27,7 +27,7 @@ window.COUNTRIES = {
 
 window.SCHOLARSHIPS = [
   {
-    id: "chevening", c: "uk", levels: ["master"], funding: "full", fields: ["all"], months: [8, 9, 10],
+    id: "chevening", english: "varies", c: "uk", levels: ["master"], funding: "full", fields: ["all"], months: [8, 9, 10],
     name: { ar: "منحة تشيفننغ", en: "Chevening Scholarships" },
     provider: { ar: "الحكومة البريطانية", en: "UK Government (FCDO)" },
     when: { ar: "تفتح عادةً في أغسطس وتُغلق في الخريف", en: "Usually opens in August, closes in autumn" },
@@ -38,7 +38,7 @@ window.SCHOLARSHIPS = [
     url: "https://www.chevening.org/scholarships/", kw: "england uk britain انجلترا المملكة المتحدة"
   },
   {
-    id: "fulbright", c: "us", levels: ["master", "phd"], funding: "full", fields: ["all"], months: [],
+    id: "fulbright", english: "yes", c: "us", levels: ["master", "phd"], funding: "full", fields: ["all"], months: [],
     name: { ar: "برنامج فولبرايت للطلبة الأجانب", en: "Fulbright Foreign Student Program" },
     provider: { ar: "وزارة الخارجية الأمريكية", en: "U.S. Department of State" },
     when: { ar: "الموعد يختلف حسب بلدك", en: "Deadline varies by country" },
@@ -49,7 +49,7 @@ window.SCHOLARSHIPS = [
     url: "https://foreign.fulbrightonline.org/", kw: "america usa امريكا أمريكا"
   },
   {
-    id: "erasmus-mundus", c: "eu", levels: ["master"], funding: "full", fields: ["all"], months: [10, 11, 12, 1],
+    id: "erasmus-mundus", english: "varies", c: "eu", levels: ["master"], funding: "full", fields: ["all"], months: [10, 11, 12, 1],
     name: { ar: "ماجستير إيراسموس موندوس المشترك", en: "Erasmus Mundus Joint Masters" },
     provider: { ar: "الاتحاد الأوروبي", en: "European Union" },
     when: { ar: "أغلب البرامج تستقبل الطلبات بين أكتوبر ويناير", en: "Most programmes accept applications October–January" },
@@ -60,7 +60,7 @@ window.SCHOLARSHIPS = [
     url: "https://www.eacea.ec.europa.eu/scholarships/erasmus-mundus-catalogue_en", kw: "emjm emjmd erasmus+ ايراسموس"
   },
   {
-    id: "msca-dn", c: "eu", levels: ["phd"], funding: "salary", fields: ["all"], months: [], rolling: true,
+    id: "msca-dn", english: "varies", c: "eu", levels: ["phd"], funding: "salary", fields: ["all"], months: [], rolling: true,
     name: { ar: "شبكات الدكتوراه ماري كوري (MSCA)", en: "MSCA Doctoral Networks" },
     provider: { ar: "المفوضية الأوروبية — تُنشر على EURAXESS", en: "European Commission — advertised on EURAXESS" },
     when: { ar: "مقاعد جديدة تُنشر طوال السنة", en: "New positions are posted all year" },
@@ -71,7 +71,7 @@ window.SCHOLARSHIPS = [
     url: "https://euraxess.ec.europa.eu/jobs/search", kw: "marie curie euraxess ماري كوري يوراكسس"
   },
   {
-    id: "cnrs", c: "fr", levels: ["phd"], funding: "salary", fields: ["stem", "life", "social"], months: [], rolling: true,
+    id: "cnrs", english: "no", c: "fr", levels: ["phd"], funding: "salary", fields: ["stem", "life", "social"], months: [], rolling: true,
     name: { ar: "عقود الدكتوراه في CNRS", en: "CNRS PhD Contracts" },
     provider: { ar: "المركز الوطني الفرنسي للبحث العلمي", en: "French National Centre for Scientific Research" },
     when: { ar: "إعلانات جديدة طوال السنة", en: "New offers all year" },
@@ -82,7 +82,7 @@ window.SCHOLARSHIPS = [
     url: "https://emploi.cnrs.fr/", kw: "france فرنسا مختبر"
   },
   {
-    id: "eiffel", c: "fr", levels: ["master", "phd"], funding: "partial", fields: ["stem", "social"], months: [10, 11, 12, 1],
+    id: "eiffel", english: "varies", c: "fr", levels: ["master", "phd"], funding: "partial", fields: ["stem", "social"], months: [10, 11, 12, 1],
     name: { ar: "منحة إيفل للتميّز", en: "Eiffel Excellence Scholarship" },
     provider: { ar: "وزارة أوروبا والشؤون الخارجية الفرنسية", en: "French Ministry for Europe and Foreign Affairs" },
     when: { ar: "الترشيح عبر الجامعات الفرنسية، والموعد النهائي عادةً في يناير", en: "Nomination by French institutions; deadline usually in January" },
@@ -93,7 +93,7 @@ window.SCHOLARSHIPS = [
     url: "https://www.campusfrance.org/en/eiffel-scholarship-program-of-excellence", kw: "france campus france فرنسا ايفل"
   },
   {
-    id: "daad-epos", c: "de", levels: ["master", "phd"], funding: "full", fields: ["all"], months: [8, 9, 10],
+    id: "daad-epos", english: "yes", c: "de", levels: ["master", "phd"], funding: "full", fields: ["all"], months: [8, 9, 10],
     name: { ar: "منح DAAD للدراسات العليا التنموية (EPOS)", en: "DAAD Development-Related Postgraduate Courses (EPOS)" },
     provider: { ar: "الهيئة الألمانية للتبادل الأكاديمي", en: "German Academic Exchange Service" },
     when: { ar: "أغلب البرامج بين أغسطس وأكتوبر (يختلف حسب البرنامج)", en: "Mostly August–October (varies by course)" },
@@ -104,7 +104,7 @@ window.SCHOLARSHIPS = [
     url: "https://www.daad.de/en/studying-in-germany/scholarships/daad-scholarships/", kw: "germany المانيا داد"
   },
   {
-    id: "daad-helmut-schmidt", c: "de", levels: ["master"], funding: "full", fields: ["social"], months: [6, 7],
+    id: "daad-helmut-schmidt", english: "yes", c: "de", levels: ["master"], funding: "full", fields: ["social"], months: [6, 7],
     name: { ar: "برنامج هلموت شميت (السياسات العامة والحكم الرشيد)", en: "DAAD Helmut-Schmidt-Programme (Public Policy & Good Governance)" },
     provider: { ar: "الهيئة الألمانية للتبادل الأكاديمي", en: "German Academic Exchange Service" },
     when: { ar: "يونيو – يوليو من كل سنة", en: "June – July each year" },
@@ -115,7 +115,7 @@ window.SCHOLARSHIPS = [
     url: "https://www.daad.de/en/studying-in-germany/scholarships/daad-scholarships/", kw: "germany المانيا ppgg"
   },
   {
-    id: "daad-phd", c: "de", levels: ["phd"], funding: "full", fields: ["all"], months: [],
+    id: "daad-phd", english: "varies", c: "de", levels: ["phd"], funding: "full", fields: ["all"], months: [],
     name: { ar: "منح DAAD البحثية للدكتوراه في ألمانيا", en: "DAAD Research Grants – Doctoral Programmes in Germany" },
     provider: { ar: "الهيئة الألمانية للتبادل الأكاديمي", en: "German Academic Exchange Service" },
     when: { ar: "الموعد يختلف حسب بلدك", en: "Deadline varies by country" },
@@ -126,7 +126,7 @@ window.SCHOLARSHIPS = [
     url: "https://www.daad.de/en/studying-in-germany/scholarships/daad-scholarships/", kw: "germany المانيا داد"
   },
   {
-    id: "mext", c: "jp", levels: ["bachelor", "master", "phd"], funding: "full", fields: ["all"], months: [4, 5, 6],
+    id: "mext", english: "no", c: "jp", levels: ["bachelor", "master", "phd"], funding: "full", fields: ["all"], months: [4, 5, 6],
     name: { ar: "منحة الحكومة اليابانية (MEXT)", en: "Japanese Government (MEXT) Scholarship" },
     provider: { ar: "وزارة التعليم اليابانية", en: "Japan's Ministry of Education (MEXT)" },
     when: { ar: "التقديم عبر السفارة عادةً بين أبريل ويونيو", en: "Embassy track usually April–June" },
@@ -137,7 +137,7 @@ window.SCHOLARSHIPS = [
     url: "https://www.studyinjapan.go.jp/en/planning/scholarships/mext-scholarships/", kw: "japan اليابان مونبوشو monbukagakusho"
   },
   {
-    id: "csc", c: "cn", levels: ["bachelor", "master", "phd"], funding: "full", fields: ["all"], months: [12, 1, 2, 3, 4],
+    id: "csc", english: "varies", c: "cn", levels: ["bachelor", "master", "phd"], funding: "full", fields: ["all"], months: [12, 1, 2, 3, 4],
     name: { ar: "منحة الحكومة الصينية (CSC)", en: "Chinese Government Scholarship (CSC)" },
     provider: { ar: "مجلس المنح الصيني", en: "China Scholarship Council" },
     when: { ar: "عادةً من ديسمبر إلى أبريل", en: "Usually December to April" },
@@ -148,7 +148,7 @@ window.SCHOLARSHIPS = [
     url: "https://studyinchina.csc.edu.cn/", kw: "china الصين"
   },
   {
-    id: "turkiye", c: "tr", levels: ["bachelor", "master", "phd"], funding: "full", fields: ["all"], months: [1, 2],
+    id: "turkiye", english: "varies", c: "tr", levels: ["bachelor", "master", "phd"], funding: "full", fields: ["all"], months: [1, 2],
     name: { ar: "المنح التركية (Türkiye Bursları)", en: "Türkiye Scholarships" },
     provider: { ar: "الحكومة التركية", en: "Government of Türkiye" },
     when: { ar: "عادةً من 10 يناير إلى 20 فبراير", en: "Usually 10 January – 20 February" },
@@ -159,7 +159,7 @@ window.SCHOLARSHIPS = [
     url: "https://www.turkiyeburslari.gov.tr/", kw: "turkey تركيا"
   },
   {
-    id: "stipendium-hungaricum", c: "hu", levels: ["bachelor", "master", "phd"], funding: "full", fields: ["all"], months: [11, 12, 1],
+    id: "stipendium-hungaricum", english: "varies", c: "hu", levels: ["bachelor", "master", "phd"], funding: "full", fields: ["all"], months: [11, 12, 1],
     name: { ar: "منحة ستيبنديوم هنغاريكوم", en: "Stipendium Hungaricum" },
     provider: { ar: "الحكومة الهنغارية", en: "Government of Hungary" },
     when: { ar: "عادةً من نوفمبر إلى منتصف يناير", en: "Usually November to mid-January" },
@@ -170,7 +170,7 @@ window.SCHOLARSHIPS = [
     url: "https://stipendiumhungaricum.hu/", kw: "hungary المجر هنغاريا"
   },
   {
-    id: "gates-cambridge", c: "uk", levels: ["master", "phd"], funding: "full", fields: ["all"], months: [9, 10, 11, 12],
+    id: "gates-cambridge", english: "yes", c: "uk", levels: ["master", "phd"], funding: "full", fields: ["all"], months: [9, 10, 11, 12],
     name: { ar: "منحة غيتس كامبريدج", en: "Gates Cambridge Scholarship" },
     provider: { ar: "جامعة كامبريدج", en: "University of Cambridge" },
     when: { ar: "يفتح في سبتمبر، والموعد النهائي في ديسمبر أو مطلع يناير حسب البرنامج", en: "Opens in September; deadline in December or early January by course" },
@@ -181,7 +181,7 @@ window.SCHOLARSHIPS = [
     url: "https://www.gatescambridge.org/", kw: "cambridge كامبردج england"
   },
   {
-    id: "rhodes", c: "uk", levels: ["master", "phd"], funding: "full", fields: ["all"], months: [6, 7, 8, 9],
+    id: "rhodes", english: "yes", c: "uk", levels: ["master", "phd"], funding: "full", fields: ["all"], months: [6, 7, 8, 9],
     name: { ar: "منحة رودس", en: "Rhodes Scholarship" },
     provider: { ar: "جامعة أكسفورد — مؤسسة رودس", en: "University of Oxford — Rhodes Trust" },
     when: { ar: "يفتح عادةً في يونيو ويُغلق في أواخر الصيف (حسب المنطقة)", en: "Usually opens in June and closes in late summer (by region)" },
@@ -192,7 +192,7 @@ window.SCHOLARSHIPS = [
     url: "https://www.rhodeshouse.ox.ac.uk/scholarships/", kw: "oxford اكسفورد england"
   },
   {
-    id: "clarendon", c: "uk", levels: ["master", "phd"], funding: "full", fields: ["all"], months: [9, 10, 11, 12, 1],
+    id: "clarendon", english: "yes", c: "uk", levels: ["master", "phd"], funding: "full", fields: ["all"], months: [9, 10, 11, 12, 1],
     name: { ar: "منحة كلارندون", en: "Clarendon Scholarships" },
     provider: { ar: "جامعة أكسفورد", en: "University of Oxford" },
     when: { ar: "مع موعد القبول في أكسفورد (ديسمبر أو يناير)", en: "With the Oxford admission deadline (December or January)" },
@@ -203,7 +203,7 @@ window.SCHOLARSHIPS = [
     url: "https://www.ox.ac.uk/clarendon", kw: "oxford اكسفورد england"
   },
   {
-    id: "said-foundation", c: "uk", levels: ["master"], funding: "full", fields: ["all"], months: [],
+    id: "said-foundation", english: "yes", c: "uk", levels: ["master"], funding: "full", fields: ["all"], months: [],
     name: { ar: "منح مؤسسة سعيد", en: "Saïd Foundation Scholarships" },
     provider: { ar: "مؤسسة سعيد", en: "Saïd Foundation" },
     when: { ar: "يُعلن الموعد سنوياً على موقع المؤسسة", en: "Announced each year on the foundation's site" },
@@ -214,7 +214,7 @@ window.SCHOLARSHIPS = [
     url: "https://www.saidfoundation.org/", kw: "jordan syria lebanon palestine الاردن سوريا لبنان فلسطين"
   },
   {
-    id: "swiss-excellence", c: "ch", levels: ["phd"], funding: "full", fields: ["all"], months: [8, 9, 10, 11, 12],
+    id: "swiss-excellence", english: "varies", c: "ch", levels: ["phd"], funding: "full", fields: ["all"], months: [8, 9, 10, 11, 12],
     name: { ar: "منح التميّز الحكومية السويسرية", en: "Swiss Government Excellence Scholarships" },
     provider: { ar: "الحكومة السويسرية (FCS)", en: "Swiss Confederation (FCS)" },
     when: { ar: "عادةً بين أغسطس وديسمبر (حسب بلدك)", en: "Usually August–December (by country)" },
@@ -225,7 +225,7 @@ window.SCHOLARSHIPS = [
     url: "https://www.sbfi.admin.ch/scholarships_eng", kw: "switzerland سويسرا"
   },
   {
-    id: "eth-esop", c: "ch", levels: ["master"], funding: "full", fields: ["stem"], months: [11, 12],
+    id: "eth-esop", english: "yes", c: "ch", levels: ["master"], funding: "full", fields: ["stem"], months: [11, 12],
     name: { ar: "منحة التميّز من ETH زيورخ (ESOP)", en: "ETH Zurich Excellence Scholarship (ESOP)" },
     provider: { ar: "المعهد الفدرالي السويسري للتقنية", en: "ETH Zurich" },
     when: { ar: "نوفمبر – منتصف ديسمبر مع طلب الماجستير", en: "November – mid-December with the master's application" },
@@ -236,7 +236,7 @@ window.SCHOLARSHIPS = [
     url: "https://ethz.ch/en/studies/financial/scholarships/excellencescholarship.html", kw: "switzerland سويسرا zurich"
   },
   {
-    id: "kaust", c: "sa", levels: ["master", "phd"], funding: "full", fields: ["stem", "life"], months: [], rolling: true,
+    id: "kaust", english: "yes", c: "sa", levels: ["master", "phd"], funding: "full", fields: ["stem", "life"], months: [], rolling: true,
     name: { ar: "زمالة جامعة الملك عبدالله (KAUST)", en: "KAUST Fellowship" },
     provider: { ar: "جامعة الملك عبدالله للعلوم والتقنية", en: "King Abdullah University of Science and Technology" },
     when: { ar: "القبول مفتوح أغلب السنة", en: "Admissions open most of the year" },
@@ -247,7 +247,7 @@ window.SCHOLARSHIPS = [
     url: "https://admissions.kaust.edu.sa/", kw: "saudi السعودية كاوست"
   },
   {
-    id: "gks", c: "kr", levels: ["bachelor", "master", "phd"], funding: "full", fields: ["all"], months: [2, 3, 9, 10],
+    id: "gks", english: "no", c: "kr", levels: ["bachelor", "master", "phd"], funding: "full", fields: ["all"], months: [2, 3, 9, 10],
     name: { ar: "منحة كوريا العالمية (GKS)", en: "Global Korea Scholarship (GKS)" },
     provider: { ar: "الحكومة الكورية", en: "Government of Korea (NIIED)" },
     when: { ar: "الدراسات العليا: فبراير–مارس • البكالوريوس: سبتمبر–أكتوبر", en: "Graduate: Feb–Mar • Undergraduate: Sep–Oct" },
@@ -258,7 +258,7 @@ window.SCHOLARSHIPS = [
     url: "https://www.studyinkorea.go.kr/", kw: "korea كوريا niied"
   },
   {
-    id: "maeci", c: "it", levels: ["master", "phd"], funding: "full", fields: ["all"], months: [4, 5, 6],
+    id: "maeci", english: "yes", c: "it", levels: ["master", "phd"], funding: "full", fields: ["all"], months: [4, 5, 6],
     name: { ar: "منح الحكومة الإيطالية (MAECI)", en: "Italian Government Scholarships (MAECI)" },
     provider: { ar: "وزارة الخارجية الإيطالية", en: "Italian Ministry of Foreign Affairs" },
     when: { ar: "عادةً في الربيع (أبريل–يونيو)", en: "Usually in spring (April–June)" },
@@ -269,7 +269,7 @@ window.SCHOLARSHIPS = [
     url: "https://studyinitaly.esteri.it/", kw: "italy ايطاليا"
   },
   {
-    id: "holland", c: "nl", levels: ["bachelor", "master"], funding: "partial", fields: ["all"], months: [11, 12, 1, 2, 3, 4],
+    id: "holland", english: "yes", c: "nl", levels: ["bachelor", "master"], funding: "partial", fields: ["all"], months: [11, 12, 1, 2, 3, 4],
     name: { ar: "منحة هولندا (NL Scholarship)", en: "NL Scholarship (Holland Scholarship)" },
     provider: { ar: "وزارة التعليم الهولندية والجامعات", en: "Dutch Ministry of Education and universities" },
     when: { ar: "الموعد النهائي 1 فبراير أو 1 مايو حسب الجامعة", en: "Deadline 1 February or 1 May depending on the university" },
@@ -280,7 +280,7 @@ window.SCHOLARSHIPS = [
     url: "https://www.studyinnl.org/finances/nl-scholarship", kw: "netherlands holland هولندا"
   },
   {
-    id: "pearson", c: "ca", levels: ["bachelor"], funding: "full", fields: ["all"], months: [9, 10, 11, 12, 1],
+    id: "pearson", english: "yes", c: "ca", levels: ["bachelor"], funding: "full", fields: ["all"], months: [9, 10, 11, 12, 1],
     name: { ar: "منحة لستر بيرسون الدولية", en: "Lester B. Pearson International Scholarship" },
     provider: { ar: "جامعة تورنتو", en: "University of Toronto" },
     when: { ar: "ترشيح المدرسة في الخريف، والطلب حتى يناير", en: "School nomination in autumn; application by January" },
@@ -291,7 +291,7 @@ window.SCHOLARSHIPS = [
     url: "https://future.utoronto.ca/pearson/", kw: "canada كندا toronto تورنتو"
   },
   {
-    id: "knight-hennessy", c: "us", levels: ["master", "phd"], funding: "full", fields: ["all"], months: [6, 7, 8, 9, 10],
+    id: "knight-hennessy", english: "yes", c: "us", levels: ["master", "phd"], funding: "full", fields: ["all"], months: [6, 7, 8, 9, 10],
     name: { ar: "منحة نايت-هينيسي", en: "Knight-Hennessy Scholars" },
     provider: { ar: "جامعة ستانفورد", en: "Stanford University" },
     when: { ar: "الموعد النهائي عادةً مطلع أكتوبر", en: "Deadline usually in early October" },
@@ -302,7 +302,7 @@ window.SCHOLARSHIPS = [
     url: "https://knight-hennessy.stanford.edu/", kw: "usa stanford امريكا ستانفورد"
   },
   {
-    id: "nyuad", c: "ae", levels: ["bachelor"], funding: "full", fields: ["all"], months: [9, 10, 11, 12, 1],
+    id: "nyuad", english: "varies", c: "ae", levels: ["bachelor"], funding: "full", fields: ["all"], months: [9, 10, 11, 12, 1],
     name: { ar: "الدعم المالي في جامعة نيويورك أبوظبي", en: "NYU Abu Dhabi Financial Support" },
     provider: { ar: "جامعة نيويورك أبوظبي", en: "NYU Abu Dhabi" },
     when: { ar: "القرار المبكر في نوفمبر، والعادي في يناير", en: "Early decision in November; regular in January" },
@@ -313,7 +313,7 @@ window.SCHOLARSHIPS = [
     url: "https://nyuad.nyu.edu/en/admissions/undergraduate/financial-support.html", kw: "uae الامارات ابوظبي"
   },
   {
-    id: "doha-institute", c: "qa", levels: ["master"], funding: "full", fields: ["social"], months: [],
+    id: "doha-institute", english: "yes", c: "qa", levels: ["master"], funding: "full", fields: ["social"], months: [],
     name: { ar: "منح معهد الدوحة للدراسات العليا", en: "Doha Institute for Graduate Studies Scholarships" },
     provider: { ar: "معهد الدوحة للدراسات العليا", en: "Doha Institute for Graduate Studies" },
     when: { ar: "يُعلن الموعد سنوياً على موقع المعهد", en: "Announced each year on the institute's site" },
@@ -324,7 +324,7 @@ window.SCHOLARSHIPS = [
     url: "https://www.dohainstitute.edu.qa/", kw: "qatar قطر الدوحة"
   },
   {
-    id: "isdb", c: "ww", levels: ["bachelor", "master", "phd"], funding: "full", fields: ["stem", "life"], months: [2, 3, 4],
+    id: "isdb", english: "varies", c: "ww", levels: ["bachelor", "master", "phd"], funding: "full", fields: ["stem", "life"], months: [2, 3, 4],
     name: { ar: "منح البنك الإسلامي للتنمية", en: "Islamic Development Bank (IsDB) Scholarships" },
     provider: { ar: "البنك الإسلامي للتنمية", en: "Islamic Development Bank" },
     when: { ar: "عادةً في الربع الأول من السنة", en: "Usually in the first quarter of the year" },
@@ -335,7 +335,7 @@ window.SCHOLARSHIPS = [
     url: "https://www.isdb.org/scholarships", kw: "idb البنك الاسلامي"
   },
   {
-    id: "si-sweden", c: "se", levels: ["master"], funding: "full", fields: ["all"], months: [2],
+    id: "si-sweden", english: "yes", c: "se", levels: ["master"], funding: "full", fields: ["all"], months: [2],
     name: { ar: "منحة المعهد السويدي للمهنيين العالميين", en: "Swedish Institute Scholarships for Global Professionals" },
     provider: { ar: "المعهد السويدي", en: "Swedish Institute (SI)" },
     when: { ar: "طلب القبول حتى منتصف يناير، وطلب المنحة في فبراير", en: "Admission by mid-January; scholarship application in February" },
@@ -346,7 +346,7 @@ window.SCHOLARSHIPS = [
     url: "https://si.se/en/apply/scholarships/swedish-institute-scholarships-for-global-professionals/", kw: "sweden السويد"
   },
   {
-    id: "embl-phd", c: "eu", levels: ["phd"], funding: "salary", fields: ["life"], months: [],
+    id: "embl-phd", english: "no", c: "eu", levels: ["phd"], funding: "salary", fields: ["life"], months: [],
     name: { ar: "برنامج الدكتوراه الدولي في EMBL", en: "EMBL International PhD Programme" },
     provider: { ar: "المختبر الأوروبي للبيولوجيا الجزيئية", en: "European Molecular Biology Laboratory" },
     when: { ar: "جولتا قبول في السنة", en: "Two recruitment rounds a year" },
@@ -357,7 +357,7 @@ window.SCHOLARSHIPS = [
     url: "https://www.embl.org/about/info/embl-international-phd-programme/", kw: "biology genetics genomics بيولوجيا جينات وراثة"
   },
   {
-    id: "imprs", c: "de", levels: ["phd"], funding: "salary", fields: ["stem", "life", "social"], months: [],
+    id: "imprs", english: "varies", c: "de", levels: ["phd"], funding: "salary", fields: ["stem", "life", "social"], months: [],
     name: { ar: "مدارس ماكس بلانك البحثية الدولية (IMPRS)", en: "International Max Planck Research Schools (IMPRS)" },
     provider: { ar: "جمعية ماكس بلانك", en: "Max Planck Society" },
     when: { ar: "لكل مدرسة موعدها (كثير منها في الخريف والشتاء)", en: "Each school has its own deadline (many in autumn–winter)" },
@@ -368,7 +368,7 @@ window.SCHOLARSHIPS = [
     url: "https://www.mpg.de/en/imprs", kw: "germany المانيا max planck"
   },
   {
-    id: "mastercard", c: "ww", levels: ["bachelor", "master"], funding: "full", fields: ["all"], months: [],
+    id: "mastercard", english: "varies", c: "ww", levels: ["bachelor", "master"], funding: "full", fields: ["all"], months: [],
     name: { ar: "برنامج منح مؤسسة ماستركارد", en: "Mastercard Foundation Scholars Program" },
     provider: { ar: "مؤسسة ماستركارد وجامعات شريكة", en: "Mastercard Foundation and partner universities" },
     when: { ar: "يختلف حسب الجامعة الشريكة", en: "Varies by partner university" },
@@ -379,3 +379,135 @@ window.SCHOLARSHIPS = [
     url: "https://mastercardfdn.org/en/what-we-do/our-programs/mastercard-foundation-scholars-program/", kw: "africa افريقيا مصر السودان المغرب تونس الجزائر egypt sudan morocco"
   }
 ];
+
+/* ملاحظة اختبار اللغة لكل منحة: yes = مطلوب، varies = حسب البرنامج، no = غير مطلوب */
+window.ENGLISH_NOTES = {
+ "chevening": {
+  "ar": "تشيفننغ نفسها لا تطلب شهادة لغة، لكن الجامعة البريطانية قد تطلبها للقبول.",
+  "en": "Chevening itself asks for no test, but your UK university may require one for admission."
+ },
+ "fulbright": {
+  "ar": "اختبار TOEFL مطلوب في أغلب الدول.",
+  "en": "TOEFL is required in most countries."
+ },
+ "erasmus-mundus": {
+  "ar": "أغلب البرامج تطلب IELTS أو TOEFL، وبعضها يقبل إفادة بأن دراستك السابقة كانت بالإنجليزية.",
+  "en": "Most programmes ask for IELTS or TOEFL; some accept proof that your previous degree was taught in English."
+ },
+ "msca-dn": {
+  "ar": "غالباً لا تُطلب شهادة رسمية ويُقيَّم مستواك في المقابلة، لكن بعض الجامعات تطلبها عند التسجيل.",
+  "en": "Usually no formal certificate is asked and your level is judged at interview, but some universities require one at enrolment."
+ },
+ "cnrs": {
+  "ar": "لا تُطلب شهادة لغة؛ يُقيَّم مستواك من الملف والمقابلة.",
+  "en": "No language certificate is required; your level is judged from the application and interview."
+ },
+ "eiffel": {
+  "ar": "المنحة لا تشترط اختباراً؛ شرط اللغة تحدده الجامعة الفرنسية والبرنامج.",
+  "en": "The scholarship sets no test; the French institution and programme decide the language requirement."
+ },
+ "daad-epos": {
+  "ar": "شهادة IELTS أو TOEFL للبرامج بالإنجليزية (وشهادة ألمانية للبرامج بالألمانية).",
+  "en": "IELTS or TOEFL for English-taught courses (a German certificate for German-taught ones)."
+ },
+ "daad-helmut-schmidt": {
+  "ar": "شهادة لغة إنجليزية أو ألمانية حسب لغة البرنامج.",
+  "en": "An English or German certificate, depending on the course language."
+ },
+ "daad-phd": {
+  "ar": "يُطلب إثبات لمستوى اللغة، ويُقبل أكثر من نوع من الشهادات حسب بلدك ولغة البحث.",
+  "en": "Proof of language level is required; several kinds of evidence are accepted depending on country and working language."
+ },
+ "mext": {
+  "ar": "لا تُشترط شهادة؛ السفارة تُجري اختباراتها الخاصة ومنها الإنجليزية، والشهادات تدعم ملفك.",
+  "en": "No certificate is required; the embassy runs its own exams, including English. Certificates strengthen your file."
+ },
+ "csc": {
+  "ar": "حسب الجامعة: كثير منها يقبل إفادة لغة الدراسة بدل IELTS.",
+  "en": "Depends on the university: many accept a medium-of-instruction letter instead of IELTS."
+ },
+ "turkiye": {
+  "ar": "ليست شرطاً عاماً؛ بعض الجامعات والبرامج بالإنجليزية تطلبها.",
+  "en": "Not a general requirement; some universities and English-taught programmes ask for it."
+ },
+ "stipendium-hungaricum": {
+  "ar": "يُطلب إثبات لغة، وكثير من الجامعات تقبل بدائل أو تُجري مقابلة.",
+  "en": "Proof of language is required; many universities accept alternatives or hold an interview."
+ },
+ "gates-cambridge": {
+  "ar": "شرط جامعة كامبريدج لغير الناطقين بالإنجليزية.",
+  "en": "A University of Cambridge requirement for non-native speakers."
+ },
+ "rhodes": {
+  "ar": "حسب شروط جامعة أكسفورد لغير الناطقين بالإنجليزية.",
+  "en": "Per University of Oxford requirements for non-native speakers."
+ },
+ "clarendon": {
+  "ar": "حسب شروط جامعة أكسفورد لغير الناطقين بالإنجليزية.",
+  "en": "Per University of Oxford requirements for non-native speakers."
+ },
+ "said-foundation": {
+  "ar": "شهادة IELTS مطلوبة غالباً ضمن الطلب.",
+  "en": "An IELTS certificate is normally required with the application."
+ },
+ "swiss-excellence": {
+  "ar": "المنحة لا تشترط اختباراً محدداً؛ يعتمد على الجامعة والمشرف.",
+  "en": "The scholarship sets no specific test; it depends on the university and supervisor."
+ },
+ "eth-esop": {
+  "ar": "شهادة إنجليزية بمستوى C1 ضمن شروط القبول في الماجستير.",
+  "en": "A C1-level English certificate is part of master's admission."
+ },
+ "kaust": {
+  "ar": "TOEFL أو IELTS، مع إعفاء لمن درس بالإنجليزية في دول محددة.",
+  "en": "TOEFL or IELTS, waived for degrees taught in English in certain countries."
+ },
+ "gks": {
+  "ar": "ليست إلزامية؛ شهادات الإنجليزية أو الكورية تمنحك أفضلية.",
+  "en": "Not mandatory; English or Korean certificates give you an advantage."
+ },
+ "maeci": {
+  "ar": "شهادة لغة إنجليزية أو إيطالية حسب لغة البرنامج.",
+  "en": "An English or Italian certificate, depending on the course language."
+ },
+ "holland": {
+  "ar": "ضمن شروط القبول في الجامعة الهولندية.",
+  "en": "Part of admission at the Dutch university."
+ },
+ "pearson": {
+  "ar": "مطلوبة إلا إذا كانت دراستك الثانوية بالإنجليزية.",
+  "en": "Required unless your schooling was in English."
+ },
+ "knight-hennessy": {
+  "ar": "TOEFL لغير الناطقين بالإنجليزية حسب شروط ستانفورد.",
+  "en": "TOEFL for non-native speakers, per Stanford's rules."
+ },
+ "nyuad": {
+  "ar": "يعتمد على لغة دراستك السابقة؛ راجع شروط القبول.",
+  "en": "Depends on the language of your previous schooling; check the admission rules."
+ },
+ "doha-institute": {
+  "ar": "شهادة إنجليزية (IELTS أو TOEFL) ضمن شروط القبول.",
+  "en": "An English certificate (IELTS or TOEFL) is part of admission."
+ },
+ "isdb": {
+  "ar": "يعتمد على الجامعة التي ستدرس فيها.",
+  "en": "Depends on the university where you will study."
+ },
+ "si-sweden": {
+  "ar": "ضمن شروط القبول في الجامعات السويدية.",
+  "en": "Part of admission to Swedish universities."
+ },
+ "embl-phd": {
+  "ar": "لا تُطلب شهادة رسمية؛ يكفي إتقان الإنجليزية ويُقيَّم في المقابلات.",
+  "en": "No formal certificate is required; fluent English is expected and assessed at interview."
+ },
+ "imprs": {
+  "ar": "لكل مدرسة شروطها؛ بعضها يطلب شهادة وبعضها يكتفي بالمقابلة.",
+  "en": "Each school sets its own rule; some ask for a certificate, others rely on the interview."
+ },
+ "mastercard": {
+  "ar": "يعتمد على الجامعة الشريكة.",
+  "en": "Depends on the partner university."
+ }
+};

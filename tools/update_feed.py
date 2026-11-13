@@ -157,6 +157,19 @@ def main():
         if name == "euraxess":  # keep earlier finds until their deadline passes
             fresh += [p for p in old if p["id"] not in ids and p.get("deadline", "") >= TODAY.isoformat()]
         merged += fresh
+    # Hand-added items (e.g. PhD calls shared as PDFs on LinkedIn) live in manual_items.json.
+    try:
+        with open(os.path.join(ROOT, "tools", "manual_items.json"), encoding="utf-8") as f:
+            for m in json.load(f):
+                if m.get("deadline") and m["deadline"] < TODAY.isoformat():
+                    continue
+                item = {"source": "linkedin", "kind": "phd", "org": "", "place": "", "field": "", "posted": "", "deadline": ""}
+                item.update(m)
+                merged.append(item)
+    except FileNotFoundError:
+        pass
+    except Exception as e:
+        errors.append("manual_items.json: %s" % e)
     for it in merged:
         it["seen"] = first_seen.get(it["id"]) or TODAY.isoformat()
     merged.sort(key=lambda x: (x["seen"], x.get("posted", "")), reverse=True)
@@ -173,7 +186,7 @@ def main():
     print("%s: %d items (%d EURAXESS, %d CNRS), %d new" % (TODAY, len(merged), by["euraxess"], by["cnrs"], added))
     for e in errors:
         print("WARNING", e, file=sys.stderr)
-    return 1 if len(errors) == 2 else 0
+    return 1 if len([e for e in errors if not e.startswith("manual")]) == 2 else 0
 
 
 if __name__ == "__main__":

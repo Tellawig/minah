@@ -11,7 +11,7 @@
     set: function (k, v) { try { localStorage.setItem("minah:" + k, JSON.stringify(v)); } catch (e) { /* storage unavailable */ } }
   };
 
-  var state = { lang: store.get("lang", "ar"), q: "", level: "", country: "", funding: "", field: "", open: false, saved: false, sort: "soon" };
+  var state = { lang: store.get("lang", "ar"), q: "", level: "", country: "", funding: "", field: "", english: "", open: false, saved: false, sort: "soon" };
   var saved = new Set(store.get("saved", []));
   var docsDone = new Set(store.get("docs", []));
 
@@ -31,6 +31,8 @@
       full: "ممولة بالكامل", partial: "تمويل جزئي", salary: "راتب بعقد عمل",
       fld_all: "كل التخصصات", fld_stem: "علوم وهندسة وتقنية", fld_life: "علوم الحياة والطب", fld_social: "علوم اجتماعية وإنسانية",
       f_open: "مفتوحة الآن", f_saved: "المحفوظة",
+      all_english: "كل متطلبات اللغة", en_no: "بدون اختبار إنجليزي", en_varies: "اختبار اللغة حسب البرنامج", en_yes: "تتطلب اختبار إنجليزي",
+      m_english: "اختبار اللغة الإنجليزية", feed_how: "كيف أقدّم؟",
       sort_soon: "الترتيب: الأقرب موعداً", sort_name: "الترتيب: الاسم",
       count: function (n) { return n === 0 ? "لا توجد نتائج" : n === 1 ? "منحة واحدة" : n === 2 ? "منحتان" : n <= 10 ? n + " منح" : n + " منحة"; },
       reset: "مسح الفلاتر",
@@ -70,6 +72,8 @@
       full: "Fully funded", partial: "Partial funding", salary: "Salaried position",
       fld_all: "All fields", fld_stem: "Science, engineering & tech", fld_life: "Life sciences & medicine", fld_social: "Social sciences & humanities",
       f_open: "Open now", f_saved: "Saved",
+      all_english: "Any language requirement", en_no: "No English test", en_varies: "English test depends on programme", en_yes: "English test required",
+      m_english: "English language test", feed_how: "How to apply",
       sort_soon: "Sort: closing soonest", sort_name: "Sort: name",
       count: function (n) { return n === 0 ? "No results" : n === 1 ? "1 scholarship" : n + " scholarships"; },
       reset: "Clear filters",
@@ -194,6 +198,7 @@
       if (state.country && s.c !== state.country) return false;
       if (state.funding && s.funding !== state.funding) return false;
       if (state.field && s.fields.indexOf(state.field) === -1 && s.fields.indexOf("all") === -1) return false;
+      if (state.english && s.english !== state.english) return false;
       if (state.open && !isOpen(s)) return false;
       if (state.saved && !saved.has(s.id)) return false;
       return words.every(function (w) { return s._hay.indexOf(w) > -1; });
@@ -217,7 +222,7 @@
       '<h3><button type="button" class="card-title" data-open="' + s.id + '">' + esc(s.name[L]) + "</button></h3>" +
       '<p class="provider">' + esc(s.provider[L]) + "</p>" +
       '<p class="sum">' + esc(s.summary[L]) + "</p>" +
-      '<div class="tags">' + levelTags(s) + '<span class="tag ' + s.funding + '">' + t(s.funding) + "</span></div>" +
+      '<div class="tags">' + levelTags(s) + '<span class="tag ' + s.funding + '">' + t(s.funding) + '</span><span class="tag en-' + s.english + '">' + t("en_" + s.english) + "</span></div>" +
       '<div class="card-foot"><span class="status ' + st.cls + '"><i></i>' + t("st_" + st.k) + '</span><span class="when">' + esc(s.when[L]) + "</span></div>" +
       "</article>";
   }
@@ -227,7 +232,7 @@
     $("#count").textContent = t("count")(list.length);
     $("#grid").innerHTML = list.length ? list.map(cardHTML).join("") :
       '<div class="empty"><strong>' + t("empty_t") + "</strong>" + t("empty_b") + "</div>";
-    var dirty = state.q || state.level || state.country || state.funding || state.field || state.open || state.saved;
+    var dirty = state.q || state.level || state.country || state.funding || state.field || state.english || state.open || state.saved;
     $("#resetBtn").hidden = !dirty;
   }
 
@@ -244,7 +249,8 @@
     }).join("");
     $("#quick").innerHTML = lv.slice(1).map(function (o) { return '<button type="button" data-level="' + o[0] + '">' + o[1] + "</button>"; }).join("") +
       '<button type="button" data-quick="open">' + t("f_open") + "</button>" +
-      '<button type="button" data-quick="full">' + t("full") + "</button>";
+      '<button type="button" data-quick="full">' + t("full") + "</button>" +
+      '<button type="button" data-quick="noeng">' + t("en_no") + "</button>";
 
     var used = {};
     DATA.forEach(function (s) { used[s.c] = 1; });
@@ -253,6 +259,7 @@
     options($("#fCountry"), [["", t("all_countries")]].concat(cs), state.country);
     options($("#fFunding"), [["", t("all_funding")], ["full", t("full")], ["salary", t("salary")], ["partial", t("partial")]], state.funding);
     options($("#fField"), [["", t("all_fields")], ["stem", t("fld_stem")], ["life", t("fld_life")], ["social", t("fld_social")]], state.field);
+    options($("#fEnglish"), [["", t("all_english")], ["no", t("en_no")], ["varies", t("en_varies")], ["yes", t("en_yes")]], state.english);
     options($("#sort"), [["soon", t("sort_soon")], ["name", t("sort_name")]], state.sort);
     $("#fOpen").checked = state.open;
     $("#fSaved").checked = state.saved;
@@ -294,7 +301,22 @@
   var FEED = (window.LATEST && window.LATEST.items) || [];
   var FEED_DATE = (window.LATEST && window.LATEST.updated) || "";
   var feed = { q: "", src: "", shown: 12 };
-  var SRC_NAME = { euraxess: "EURAXESS", cnrs: "CNRS" };
+  var SRC_NAME = { euraxess: "EURAXESS", cnrs: "CNRS", linkedin: "LinkedIn" };
+  var feedOpen = {};
+  var FEED_HOW = {
+    euraxess: {
+      ar: ["افتح الإعلان واقرأ قسم Requirements للتأكد من أن مؤهلاتك مطابقة.", "انزل إلى قسم Where to apply: ستجد رابط التقديم أو البريد الإلكتروني للجهة.", "جهّز سيرة ذاتية، رسالة دافع موجّهة للمشروع نفسه، كشوف العلامات، وأسماء معرّفين.", "قدّم قبل الموعد المذكور، واذكر رقم الإعلان في رسالتك."],
+      en: ["Open the advert and read the Requirements section to check you qualify.", "Scroll to Where to apply: it gives the application link or the contact email.", "Prepare a CV, a motivation letter written for this project, transcripts and referees.", "Apply before the stated deadline and quote the offer reference."]
+    },
+    cnrs: {
+      ar: ["افتح الإعلان واقرأ وصف المشروع والمؤهلات المطلوبة.", "اضغط Apply وأنشئ حساباً على بوابة التوظيف في CNRS.", "ارفع سيرتك الذاتية ورسالة دافع موجّهة للمختبر، وأي وثائق يطلبها الإعلان.", "التقديم عبر البوابة فقط، والإعلان يُغلق عند اختيار مرشح، فقدّم مبكراً."],
+      en: ["Open the offer and read the project description and required profile.", "Click Apply and create an account on the CNRS careers portal.", "Upload your CV, a cover letter addressed to the lab, and any documents the offer lists.", "Applications go through the portal only, and offers close once filled, so apply early."]
+    },
+    linkedin: {
+      ar: ["افتح المنشور الأصلي واقرأ ملف الإعلان كاملاً.", "اتبع طريقة التقديم المذكورة فيه (رابط أو بريد إلكتروني).", "تحقق من الإعلان على الموقع الرسمي للجامعة قبل إرسال وثائقك."],
+      en: ["Open the original post and read the full call document.", "Follow the application route it gives (link or email).", "Confirm the call on the university's official website before sending documents."]
+    }
+  };
   var hasOlder = FEED.some(function (x) { return x.seen !== FEED_DATE; });
   FEED.forEach(function (x) { x._hay = norm([x.title, x.org, x.place, x.field].join(" ")); });
   function fmtDate(iso) {
@@ -309,6 +331,7 @@
     $("#feedSub").textContent = t("feed_sub")(FEED.length, fmtDate(FEED_DATE));
     $("#feedQ").placeholder = t("feed_ph"); $("#feedQ").setAttribute("aria-label", t("feed_ph"));
     var tabs = [["", t("feed_all")], ["euraxess", "EURAXESS"], ["cnrs", "CNRS"], ["funding", t("feed_funding")]];
+    if (FEED.some(function (x) { return x.source === "linkedin"; })) tabs.splice(3, 0, ["linkedin", "LinkedIn"]);
     $("#feedSeg").innerHTML = tabs.map(function (o) {
       return '<button type="button" data-feed="' + o[0] + '" aria-pressed="' + (feed.src === o[0]) + '">' + o[1] + "</button>";
     }).join("");
@@ -320,13 +343,18 @@
     var soon = new Date(Date.now() + 7 * 864e5).toISOString().slice(0, 10);
     $("#feedList").innerHTML = list.length ? list.slice(0, feed.shown).map(function (x) {
       var meta = [x.org, x.place, x.field].filter(Boolean).map(esc).join(" · ");
-      return '<li><a class="feed-item" href="' + esc(x.url) + '" target="_blank" rel="noopener">' +
-        '<span class="feed-main"><strong dir="auto">' + esc(x.title) + '</strong><span class="feed-meta" dir="auto">' + meta + "</span></span>" +
+      var eng = x.english || (x.source === "cnrs" ? "no" : "");
+      var steps = x.how ? [x.how] : FEED_HOW[x.source][state.lang];
+      var how = feedOpen[x.id] ? '<ol class="feed-how">' + steps.map(function (h) { return "<li>" + esc(h) + "</li>"; }).join("") + "</ol>" : "";
+      return '<li class="feed-row"><div class="feed-item">' +
+        '<span class="feed-main"><a href="' + esc(x.url) + '" target="_blank" rel="noopener"><strong dir="auto">' + esc(x.title) + ' ↗</strong></a><span class="feed-meta" dir="auto">' + meta + "</span></span>" +
         '<span class="feed-tags"><span class="tag src-' + x.source + '">' + SRC_NAME[x.source] + "</span>" +
         '<span class="tag">' + t(x.kind === "funding" ? "feed_funding" : "feed_phd") + "</span>" +
+        (eng ? '<span class="tag en-' + eng + '">' + t("en_" + eng) + "</span>" : "") +
         (hasOlder && x.seen === FEED_DATE ? '<span class="tag full">' + t("feed_new") + "</span>" : "") +
         (x.deadline ? '<span class="tag' + (x.deadline <= soon ? " partial" : "") + '">' + t("feed_deadline") + fmtDate(x.deadline) + "</span>" : "") +
-        "</span></a></li>";
+        '<button type="button" class="link-btn" data-how="' + esc(x.id) + '" aria-expanded="' + !!feedOpen[x.id] + '">' + t("feed_how") + "</button>" +
+        "</span></div>" + how + "</li>";
     }).join("") : '<li class="empty">' + t("feed_empty") + "</li>";
     $("#feedMore").hidden = list.length <= feed.shown;
   }
@@ -335,9 +363,14 @@
     var b = e.target.closest("[data-feed]"); if (!b) return;
     feed.src = b.dataset.feed; feed.shown = 12; renderFeed();
   });
+  $("#feedList").addEventListener("click", function (e) {
+    var b = e.target.closest("[data-how]"); if (!b) return;
+    feedOpen[b.dataset.how] = !feedOpen[b.dataset.how]; renderFeed();
+  });
   $("#feedMore").addEventListener("click", function () { feed.shown += 12; renderFeed(); });
 
-  function renderAll() { renderStatic(); renderControls(); renderGrid(); renderFeed(); if ($("#modal").open && currentId) fillModal(currentId); }
+  window.MINAH = { norm: norm, status: status, rank: rank, isOpen: isOpen, t: t, lang: function () { return state.lang; }, docs: DOCS, steps: STEPS, onLang: [] };
+  function renderAll() { renderStatic(); renderControls(); renderGrid(); renderFeed(); window.MINAH.onLang.forEach(function (f) { f(); }); if ($("#modal").open && currentId) fillModal(currentId); }
 
   /* ---------- Modal ---------- */
   var currentId = null;
@@ -356,7 +389,8 @@
       '<div class="fact"><small>' + t("m_when") + "</small><b>" + esc(s.when[L]) + '</b><br><span class="status ' + st.cls + '"><i></i>' + t("st_" + st.k) + "</span></div>" +
       '<div class="fact"><small>' + t("m_funding") + "</small><b>" + t(s.funding) + "</b></div>" +
       '<div class="fact"><small>' + t("m_levels") + "</small><b>" + s.levels.map(t).join(L === "ar" ? "، " : ", ") + "</b></div>" +
-      '<div class="fact"><small>' + t("m_fields") + "</small><b>" + fields + "</b></div></div>" +
+      '<div class="fact"><small>' + t("m_fields") + "</small><b>" + fields + "</b></div>" +
+      '<div class="fact wide"><small>' + t("m_english") + '</small><b>' + t("en_" + s.english) + "</b><br><span>" + esc(((window.ENGLISH_NOTES || {})[s.id] || {})[L] || "") + "</span></div></div>" +
       "<div><h3>" + t("m_elig") + "</h3><ul>" + li(s.elig[L]) + "</ul></div>" +
       "<div><h3>" + t("m_benefits") + "</h3><ul>" + li(s.benefits[L]) + "</ul></div>" +
       '<div class="how"><h3>' + t("m_how") + "</h3><p>" + esc(s.how[L]) + "</p></div>" +
@@ -409,18 +443,19 @@
       if (el.parentNode.id === "quick") $("#scholarships").scrollIntoView();
     } else if (el.dataset.quick === "open") { state.open = true; $("#scholarships").scrollIntoView(); }
     else if (el.dataset.quick === "full") { state.funding = "full"; $("#scholarships").scrollIntoView(); }
+    else if (el.dataset.quick === "noeng") { state.english = "no"; $("#scholarships").scrollIntoView(); }
     renderControls(); renderGrid();
   });
 
   $("#q").addEventListener("input", function (e) { state.q = e.target.value; renderGrid(); });
   $("#searchForm").addEventListener("submit", function (e) { e.preventDefault(); $("#scholarships").scrollIntoView(); });
-  [["#fCountry", "country"], ["#fFunding", "funding"], ["#fField", "field"], ["#sort", "sort"]].forEach(function (p) {
+  [["#fCountry", "country"], ["#fFunding", "funding"], ["#fField", "field"], ["#fEnglish", "english"], ["#sort", "sort"]].forEach(function (p) {
     $(p[0]).addEventListener("change", function (e) { state[p[1]] = e.target.value; renderGrid(); });
   });
   $("#fOpen").addEventListener("change", function (e) { state.open = e.target.checked; renderGrid(); });
   $("#fSaved").addEventListener("change", function (e) { state.saved = e.target.checked; renderGrid(); });
   $("#resetBtn").addEventListener("click", function () {
-    state.q = ""; state.level = ""; state.country = ""; state.funding = ""; state.field = ""; state.open = false; state.saved = false;
+    state.q = ""; state.level = ""; state.country = ""; state.funding = ""; state.field = ""; state.english = ""; state.open = false; state.saved = false;
     renderControls(); renderGrid();
   });
   $("#langBtn").addEventListener("click", function () {
