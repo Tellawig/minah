@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>بوصلة المنح — منح البكالوريوس والماجستير والدكتوراه</title>
+<meta name="description" content="دليل عربي للمنح الدراسية: بكالوريوس، ماجستير ودكتوراه، مع شرح آلية التقديم خطوة بخطوة.">
+<meta name="theme-color" content="#0f1b2d">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ar_AR">
+<meta property="og:locale:alternate" content="en_GB">
+<meta property="og:title" content="بوصلة المنح — منح البكالوريوس والماجستير والدكتوراه">
+<meta property="og:description" content="منح ممولة حول العالم مع شرح آلية التقديم خطوة بخطوة، وفرص جديدة كل يوم من EURAXESS و CNRS.">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Ccircle cx='20' cy='20' r='19' fill='%230f1b2d'/%3E%3Ccircle cx='20' cy='20' r='14' fill='none' stroke='%23fff' stroke-width='2'/%3E%3Cpath d='M26.5 13.5 22 22l-8.500 4.500L18 18z' fill='%23e0a526'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-head">
+  <div class="wrap head-in">
+    <a class="brand" href="#top">
+      <svg viewBox="0 0 40 40" width="34" height="34" aria-hidden="true"><circle cx="20" cy="20" r="18" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M26.5 13.5 22 22l-8.5 4.5L18 18z" fill="#e0a526"/><circle cx="20" cy="20" r="2" fill="currentColor"/></svg>
+      <span data-i18n="brand"></span>
+    </a>
+    <nav class="nav" aria-label="main">
+      <a href="#scholarships" data-i18n="nav_list"></a>
+      <a href="#latest" data-i18n="nav_latest"></a>
+      <a href="#guide" data-i18n="nav_guide"></a>
+      <a href="#sources" data-i18n="nav_sources"></a>
+      <a href="#faq" data-i18n="nav_faq"></a>
+    </nav>
+    <button id="langBtn" class="lang-btn" type="button"></button>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <p class="eyebrow" data-i18n="hero_eyebrow"></p>
+      <h1 data-i18n="hero_title"></h1>
+      <p class="lead" data-i18n="hero_lead"></p>
+      <form class="search" id="searchForm" role="search">
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="m20 20-3.6-3.6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <input id="q" type="search" autocomplete="off">
+        <button type="submit" data-i18n="search_btn"></button>
+      </form>
+      <div class="quick" id="quick"></div>
+      <dl class="stats" id="stats"></dl>
+    </div>
+  </section>
+
+  <section class="wrap section" id="scholarships">
+    <div class="filters">
+      <div class="seg" id="levelSeg" role="group"></div>
+      <select id="fCountry" aria-label="country"></select>
+      <select id="fFunding" aria-label="funding"></select>
+      <select id="fField" aria-label="field"></select>
+      <label class="toggle"><input type="checkbox" id="fOpen"><span data-i18n="f_open"></span></label>
+      <label class="toggle"><input type="checkbox" id="fSaved"><span data-i18n="f_saved"></span></label>
+    </div>
+    <div class="result-bar">
+      <p id="count" aria-live="polite"></p>
+      <div class="result-actions">
+        <button type="button" id="resetBtn" class="link-btn" data-i18n="reset" hidden></button>
+        <select id="sort" aria-label="sort"></select>
+      </div>
+    </div>
+    <div class="grid" id="grid"></div>
+    <p class="note" data-i18n="dates_note"></p>
+  </section>
+
+  <section class="section feed-section" id="latest" hidden>
+    <div class="wrap">
+      <div class="feed-head">
+        <div>
+          <h2 data-i18n="feed_title"></h2>
+          <p class="sub" id="feedSub"></p>
+        </div>
+        <input id="feedQ" type="search" autocomplete="off">
+      </div>
+      <div class="seg feed-seg" id="feedSeg" role="group"></div>
+      <ul class="feed" id="feedList"></ul>
+      <button type="button" class="btn light" id="feedMore" data-i18n="feed_more" hidden></button>
+    </div>
+  </section>
+
+  <section class="section alt" id="guide">
+    <div class="wrap">
+      <h2 data-i18n="guide_title"></h2>
+      <p class="sub" data-i18n="guide_sub"></p>
+      <ol class="steps" id="steps"></ol>
+      <div class="two">
+        <div class="panel">
+          <h3 data-i18n="docs_title"></h3>
+          <p class="sub small" data-i18n="docs_sub"></p>
+          <ul class="checklist" id="docs"></ul>
+        </div>
+        <div class="panel tip">
+          <h3 data-i18n="phd_title"></h3>
+          <p data-i18n="phd_body"></p>
+          <a class="btn ghost" href="https://euraxess.ec.europa.eu/jobs/search" target="_blank" rel="noopener" data-i18n="phd_cta"></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap section" id="sources">
+    <h2 data-i18n="src_title"></h2>
+    <p class="sub" data-i18n="src_sub"></p>
+    <div class="sources" id="srcGrid"></div>
+  </section>
+
+  <section class="section alt" id="faq">
+    <div class="wrap narrow">
+      <h2 data-i18n="faq_title"></h2>
+      <div id="faqList"></div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <p data-i18n="foot_note"></p>
+    <p class="small" id="updated"></p>
+  </div>
+</footer>
+
+<dialog id="modal" aria-labelledby="mTitle"><div id="modalBody"></div></dialog>
+<div id="toast" role="status" aria-live="polite"></div>
+
+<script src="data.js"></script>
+<script src="latest.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
