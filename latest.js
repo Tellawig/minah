@@ -962,6 +962,222 @@ window.LATEST = {
    "deadline": "",
    "url": "https://emploi.cnrs.fr/Offres/Doctorant/UPR3212-JULQUI-037/Default.aspx?lang=EN",
    "seen": "2026-11-13"
+  },
+  {
+   "source": "linkedin",
+   "kind": "phd",
+   "org": "University of Florida — ESSIE",
+   "place": "United States",
+   "field": "Engineering",
+   "posted": "",
+   "deadline": "",
+   "id": "li-uf-essie-2027",
+   "title": "Funded PhD positions for Fall 2027 — Civil, Coastal & Environmental Engineering (about 15 openings)",
+   "added": "2026-11-13",
+   "url": "https://essie.ufl.edu/",
+   "how": {
+    "ar": "راسل مكتب الدراسات العليا في ESSIE (العنوان مذكور في الإعلان وعلى موقع الكلية) واذكر التخصص والأستاذ الذي يهمك. التمويل يغطي الرسوم وراتباً لا يقل عن 36,000 دولار سنوياً وتأميناً صحياً.",
+    "en": "Email the ESSIE graduate office (address in the call and on the school site) naming the specialisation and faculty member you are interested in. Funding covers tuition, a stipend of at least $36,000 a year and health insurance."
+   },
+   "seen": "2026-11-13"
+  },
+  {
+   "source": "linkedin",
+   "kind": "phd",
+   "org": "TU Wien — Distributed Systems Group",
+   "place": "Austria",
+   "field": "Computer science",
+   "posted": "",
+   "deadline": "",
+   "id": "li-tuwien-edgeai-drone",
+   "title": "PhD Position in Distributed Edge AI for Autonomous Drone Inspection (36 months, start January 2027)",
+   "added": "2026-11-13",
+   "url": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7527044653255122945/",
+   "how": {
+    "ar": "أرسل ملف PDF واحداً يضم بياناً بحثياً موجزاً، السيرة الذاتية، ملخص رسالة الماجستير، الشهادات وكشوف العلامات إلى البريد المذكور في الإعلان. لا تُقبل الطلبات عبر رسائل لينكدإن. يشترط ماجستير في علوم الحاسوب أو مجال قريب.",
+    "en": "Email a single PDF with a brief research statement, CV, a short summary of your thesis, degree certificates and transcripts to the address in the call. Applications by LinkedIn message are not accepted. A master's in computer science or a related field is required."
+   },
+   "seen": "2026-11-13"
+  },
+  {
+   "source": "linkedin",
+   "kind": "phd",
+   "org": "University of Waterloo",
+   "place": "Canada",
+   "field": "Mechanical engineering",
+   "posted": "",
+   "deadline": "2026-12-20",
+   "id": "li-waterloo-combustion",
+   "title": "Funded MASc and PhD positions — Turbulent Combustion and Fire Modelling (CFD)",
+   "added": "2026-11-13",
+   "url": "https://www.linkedin.com/in/cecile-devaud-0a2916/recent-activity/all/",
+   "how": {
+    "ar": "أرسل بياناً موجزاً عن خبرتك البحثية مع السيرة الذاتية وكشوف العلامات إلى بريد المشرفة المذكور في الإعلان. تُراجع الطلبات أولاً بأول، والأولوية للموجودين في كندا.",
+    "en": "Email a brief statement of research experience, your CV and transcripts to the supervisor's address in the call. Applications are reviewed on a rolling basis; candidates already in Canada are prioritised."
+   },
+   "seen": "2026-11-13"
+  },
+  {
+   "source": "linkedin",
+   "kind": "phd",
+   "org": "Hosts include Imperial College London and IDIBAPS Barcelona",
+   "place": "Europe",
+   "field": "Life sciences",
+   "posted": "",
+   "deadline": "2027-01-10",
+   "id": "li-mediculous-remedy",
+   "title": "MEDIculous REMeDy (MSCA Doctoral Network) — fully funded 3-year PhD positions in diabetes, metabolic disease and precision medicine",
+   "added": "2026-11-13",
+   "url": "https://www.linkedin.com/company/mediculous-remedy/posts/",
+   "how": {
+    "ar": "اختر المشروع (DC) الذي يناسبك من منشورات الشبكة، ثم قدّم عبر بوابة التقديم الخاصة بالشبكة المذكورة في كل منشور. تنطبق قاعدة التنقل في برامج ماري كوري.",
+    "en": "Pick the project (DC) that fits you from the network's posts, then apply through the network's application portal linked in each post. The MSCA mobility rule applies."
+   },
+   "seen": "2026-11-13"
+  },
+  {
+   "source": "linkedin",
+   "kind": "phd",
+   "org": "Sorbonne Université — Institut de Biologie Paris-Seine",
+   "place": "France",
+   "field": "Plant biology",
+   "posted": "",
+   "deadline": "",
+   "id": "li-sorbonne-sunflower",
+   "title": "PhD Position: Molecular and epigenetic basis of maternal environmental memory in sunflower seeds",
+   "added": "2026-11-13",
+   "url": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7526655210304241664/",
+   "how": {
+    "ar": "أرسل سيرة ذاتية مفصلة، رسالة دافع، وبيانات اثنين من المعرّفين إلى البريد المذكور في الإعلان. يشترط ماجستير في بيولوجيا النبات أو البيولوجيا الجزيئية أو مجال قريب.",
+    "en": "Send a detailed CV, a cover letter and the contact details of two referees to the address in the call. A master's in plant biology, molecular biology or a related field is required."
+   },
+   "seen": "2026-11-13"
+  },
+  {
+   "source": "linkedin",
+   "kind": "phd",
+   "org": "University of Pretoria — Centre for Sexualities, AIDS and Gender",
+   "place": "South Africa",
+   "field": "Social sciences",
+   "posted": "",
+   "deadline": "2026-11-27",
+   "id": "li-pretoria-hemi",
+   "title": "Two fully funded PhD scholarships — health among African sexual and gender minority migrants (HEMI project)",
+   "added": "2026-11-13",
+   "url": "https://www.linkedin.com/in/jarred-h-martin-6402a9354/recent-activity/all/",
+   "how": {
+    "ar": "قدّم عبر نموذج التقديم المرفق في ملف الإعلان. المنحة لثلاث سنوات وتغطي الرسوم وراتباً شهرياً ومساهمة في تكاليف البحث، والبدء في فبراير 2027.",
+    "en": "Apply through the application form linked in the call document. The three-year fellowship covers tuition, a monthly stipend and research costs, starting February 2027."
+   },
+   "seen": "2026-11-13"
+  },
+  {
+   "source": "linkedin",
+   "kind": "phd",
+   "org": "Esade Business School — Institute for Social Innovation",
+   "place": "Spain",
+   "field": "Management",
+   "posted": "",
+   "deadline": "2027-01-22",
+   "id": "li-esade-phd-management",
+   "title": "Fully funded PhD in Management — social, environmental and political change (2027 intake)",
+   "added": "2026-11-13",
+   "url": "https://www.esade.edu/research-programmes/en",
+   "how": {
+    "ar": "قدّم عبر صفحة برامج البحث في Esade. البرنامج خمس سنوات (سنتان ماجستير بحثي ثم ثلاث سنوات دكتوراه) مع إعفاء كامل من الرسوم وراتب معيشة.",
+    "en": "Apply through Esade's research programmes page. The programme lasts five years (a two-year MRes, then three years of PhD) with full tuition and a living stipend."
+   },
+   "seen": "2026-11-13"
+  },
+  {
+   "source": "linkedin",
+   "kind": "phd",
+   "org": "University of Zurich — Faculty of Law",
+   "place": "Switzerland",
+   "field": "Law",
+   "posted": "",
+   "deadline": "2026-12-18",
+   "id": "li-uzh-insurance-soft-law",
+   "title": "PhD Position in Law — Keeping Insurance Soft Law Soft (SNSF project)",
+   "added": "2026-11-13",
+   "url": "https://www.linkedin.com/company/clds-uzh/posts/",
+   "how": {
+    "ar": "أرسل طلبك كملف PDF بالبريد الإلكتروني إلى عنوان الكرسي المذكور في الإعلان، ويضم: رسالة دافع، سيرة ذاتية، الشهادات وكشوف العلامات، ورسالتي توصية.",
+    "en": "Email your application as a PDF to the chair's address in the call, including a motivation letter, CV, academic credentials and transcripts, and two reference letters."
+   },
+   "seen": "2026-11-13"
+  },
+  {
+   "source": "linkedin",
+   "kind": "phd",
+   "org": "Geneva Graduate Institute — CCDP",
+   "place": "Switzerland",
+   "field": "Political science",
+   "posted": "",
+   "deadline": "2027-01-14",
+   "id": "li-geneva-land-civil-war",
+   "title": "Doctoral Researcher — Land, Civil War and Political Order in the Middle East (SNSF project, fieldwork in Lebanon)",
+   "added": "2026-11-13",
+   "url": "https://www.graduateinstitute.ch/",
+   "how": {
+    "ar": "قدّم عبر نظام القبول في برنامج الدكتوراه بالمعهد (العلاقات الدولية / العلوم السياسية)، واذكر في رسالة الدافع أنك مهتم بهذا المقعد البحثي.",
+    "en": "Apply through the Institute's PhD admissions process (International Relations / Political Science) and state your interest in this research position in your motivation letter."
+   },
+   "seen": "2026-11-13"
+  },
+  {
+   "source": "linkedin",
+   "kind": "phd",
+   "org": "Rowan University — Department of Mathematics",
+   "place": "United States",
+   "field": "Applied mathematics",
+   "posted": "",
+   "deadline": "",
+   "id": "li-rowan-biocomp",
+   "title": "PhD Positions in Applied Mathematics — BioComp Group (scientific machine learning, computational biomedicine)",
+   "added": "2026-11-13",
+   "url": "https://guanshengli.com",
+   "how": {
+    "ar": "أرسل بالبريد الإلكتروني إلى المشرف (العنوان في الإعلان وعلى موقعه): السيرة الذاتية، كشوف العلامات، بياناً موجزاً عن اهتمامك البحثي، وأي منشورات أو مشاريع.",
+    "en": "Email the supervisor (address in the call and on his page) your CV, transcripts, a brief statement of research interests and any publications or projects."
+   },
+   "seen": "2026-11-13"
+  },
+  {
+   "source": "linkedin",
+   "kind": "phd",
+   "org": "University of Cagliari, joint degree with RWTH Aachen",
+   "place": "Italy",
+   "field": "Computational biophysics",
+   "posted": "",
+   "deadline": "2026-12-10",
+   "id": "li-elevate-dc10",
+   "title": "ELEVATE (MSCA Doctoral Network) — PhD DC10: physics-based simulations and machine learning for protein dynamics",
+   "added": "2026-11-13",
+   "url": "https://elevate-ejd.eu/apply",
+   "how": {
+    "ar": "قدّم عبر صفحة التقديم الخاصة بالشبكة. البدء في خريف 2027، وتنطبق قاعدة التنقل في برامج ماري كوري.",
+    "en": "Apply through the network's application page. The position starts in autumn 2027 and the MSCA mobility rule applies."
+   },
+   "seen": "2026-11-13"
+  },
+  {
+   "source": "linkedin",
+   "kind": "phd",
+   "org": "Universidad Complutense de Madrid — MedChemLab",
+   "place": "Spain",
+   "field": "Chemistry",
+   "posted": "",
+   "deadline": "2026-12-04",
+   "id": "li-ucm-medchem",
+   "title": "Fully funded 4-year PhD in Medicinal Chemistry and Chemical Biology — targeted therapies against cancer and progeria",
+   "added": "2026-11-13",
+   "url": "https://www.ucm.es/recursos-humanos-de-investigacion-contratos-predoctorales",
+   "how": {
+    "ar": "قدّم عبر منصة التقديم الإلكترونية لجامعة كومبلوتنسي ضمن الإعلان الرسمي رقم CT449/26. يشترط خلفية في الكيمياء وسجل أكاديمي جيد.",
+    "en": "Apply through the UCM online application platform under official call CT449/26. A chemistry background and a good academic record are required."
+   },
+   "seen": "2026-11-13"
   }
  ]
 };

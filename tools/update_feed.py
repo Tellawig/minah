@@ -163,6 +163,9 @@ def main():
             for m in json.load(f):
                 if m.get("deadline") and m["deadline"] < TODAY.isoformat():
                     continue
+                # Calls without a deadline are dropped 45 days after they were added.
+                if not m.get("deadline") and m.get("added") and (TODAY - dt.date.fromisoformat(m["added"])).days > 45:
+                    continue
                 item = {"source": "linkedin", "kind": "phd", "org": "", "place": "", "field": "", "posted": "", "deadline": ""}
                 item.update(m)
                 merged.append(item)

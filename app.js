@@ -54,7 +54,7 @@
       foot_note: "بوصلة المنح دليل مستقل وغير تابع لأي جهة مانحة. المعلومات للإرشاد، والمرجع النهائي هو الموقع الرسمي لكل منحة.",
       updated: "آخر تحديث للبيانات: ",
       nav_latest: "أحدث الفرص", feed_title: "أحدث الفرص المنشورة",
-      feed_sub: function (n, d) { return n + " فرصة من EURAXESS و CNRS · تُحدَّث يومياً · آخر تحديث " + d + " · العناوين بلغة الإعلان الأصلية"; },
+      feed_sub: function (n, d) { return n + " فرصة من EURAXESS و CNRS ولينكدإن · تُحدَّث يومياً · آخر تحديث " + d + " · العناوين بلغة الإعلان الأصلية"; },
       feed_ph: "ابحث في الفرص (بالإنجليزية)…", feed_all: "الكل", feed_funding: "منح وتمويل", feed_more: "عرض المزيد",
       feed_deadline: "آخر موعد: ", feed_new: "جديد", feed_phd: "مقعد دكتوراه", feed_empty: "لا توجد فرص مطابقة"
     },
@@ -95,7 +95,7 @@
       foot_note: "Minah Compass is an independent guide, not affiliated with any funder. Information is for guidance; each scholarship's official website is the final reference.",
       updated: "Data last updated: ",
       nav_latest: "Latest", feed_title: "Latest opportunities",
-      feed_sub: function (n, d) { return n + " opportunities from EURAXESS and CNRS · updated daily · last update " + d + " · titles in the advert's original language"; },
+      feed_sub: function (n, d) { return n + " opportunities from EURAXESS, CNRS and LinkedIn · updated daily · last update " + d + " · titles in the advert's original language"; },
       feed_ph: "Search opportunities…", feed_all: "All", feed_funding: "Scholarships & funding", feed_more: "Show more",
       feed_deadline: "Deadline: ", feed_new: "New", feed_phd: "PhD position", feed_empty: "No matching opportunities"
     }
@@ -344,7 +344,7 @@
     $("#feedList").innerHTML = list.length ? list.slice(0, feed.shown).map(function (x) {
       var meta = [x.org, x.place, x.field].filter(Boolean).map(esc).join(" · ");
       var eng = x.english || (x.source === "cnrs" ? "no" : "");
-      var steps = x.how ? [x.how] : FEED_HOW[x.source][state.lang];
+      var steps = x.how ? [x.how[state.lang] || x.how] : FEED_HOW[x.source][state.lang];
       var how = feedOpen[x.id] ? '<ol class="feed-how">' + steps.map(function (h) { return "<li>" + esc(h) + "</li>"; }).join("") + "</ol>" : "";
       return '<li class="feed-row"><div class="feed-item">' +
         '<span class="feed-main"><a href="' + esc(x.url) + '" target="_blank" rel="noopener"><strong dir="auto">' + esc(x.title) + ' ↗</strong></a><span class="feed-meta" dir="auto">' + meta + "</span></span>" +
