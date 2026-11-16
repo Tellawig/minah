@@ -1,6 +1,84 @@
 window.LATEST = {
- "updated": "2026-11-15",
+ "updated": "2026-11-16",
  "items": [
+  {
+   "id": "eur-erratum-notice-concerning-period-between-14-and-30-august-2026",
+   "source": "euraxess",
+   "kind": "funding",
+   "title": "Erratum to the Notice concerning the period between 14 and 30 August 2026",
+   "org": "Instituto de Ciência e Inovação em Engenharia Mecânica e Engenharia Industrial",
+   "place": "Portugal",
+   "field": "",
+   "posted": "2026-11-16",
+   "deadline": "",
+   "url": "https://euraxess.ec.europa.eu/jobs/funding/erratum-notice-concerning-period-between-14-and-30-august-2026",
+   "seen": "2026-11-16"
+  },
+  {
+   "id": "eur-erratum-notice-concerning-period-between-20-march-and-3-april-2026",
+   "source": "euraxess",
+   "kind": "funding",
+   "title": "Erratum to the Notice concerning the period between 20 March and 3 April 2026",
+   "org": "Instituto de Ciência e Inovação em Engenharia Mecânica e Engenharia Industrial",
+   "place": "Portugal",
+   "field": "",
+   "posted": "2026-11-16",
+   "deadline": "",
+   "url": "https://euraxess.ec.europa.eu/jobs/funding/erratum-notice-concerning-period-between-20-march-and-3-april-2026",
+   "seen": "2026-11-16"
+  },
+  {
+   "id": "eur-480660",
+   "source": "euraxess",
+   "kind": "phd",
+   "title": "PhD on modelling thermal cracking of oxides to reuse aluminium powder in 3D printing",
+   "org": "NTNU Norwegian University of Science and Technology",
+   "place": "Norway",
+   "field": "Engineering",
+   "posted": "2026-11-16",
+   "deadline": "2026-12-13",
+   "url": "https://euraxess.ec.europa.eu/jobs/480660",
+   "seen": "2026-11-16"
+  },
+  {
+   "id": "cnrs-UMR5292-FABCHA0-001",
+   "source": "cnrs",
+   "kind": "phd",
+   "title": "Doctoral student (M/F) in medical imaging for toxicology",
+   "org": "Centre de Recherche en Neurosciences de Lyon",
+   "place": "BRON, Rhône, France",
+   "field": "36 months",
+   "posted": "",
+   "deadline": "",
+   "url": "https://emploi.cnrs.fr/Offres/Doctorant/UMR5292-FABCHA0-001/Default.aspx?lang=EN",
+   "seen": "2026-11-16"
+  },
+  {
+   "id": "cnrs-UMR8172-DOMVOL-013",
+   "source": "cnrs",
+   "kind": "phd",
+   "title": "Ph.D. (M/F): Mathematical Modeling and Applications in Forest Management: Optimal Control, Sustainability, and Missing Data",
+   "org": "Ecologie des forêts de Guyane",
+   "place": "KOUROU, Guyane, France",
+   "field": "36 months",
+   "posted": "",
+   "deadline": "",
+   "url": "https://emploi.cnrs.fr/Offres/Doctorant/UMR8172-DOMVOL-013/Default.aspx?lang=EN",
+   "seen": "2026-11-16"
+  },
+  {
+   "id": "cnrs-UMR7031-SANGUE-062",
+   "source": "cnrs",
+   "kind": "phd",
+   "title": "Ph.D. Opportunity: Investigating the Microstructure of Blood Suspensions Using Ultrasound (M/F))",
+   "org": "Laboratoire de Mécanique et d'Acoustique",
+   "place": "MARSEILLE 13, Bouches-du-Rhône, France",
+   "field": "36 months",
+   "posted": "",
+   "deadline": "",
+   "url": "https://emploi.cnrs.fr/Offres/Doctorant/UMR7031-SANGUE-062/Default.aspx?lang=EN",
+   "seen": "2026-11-16"
+  },
   {
    "id": "eur-480572",
    "source": "euraxess",
@@ -392,19 +470,6 @@ window.LATEST = {
    "seen": "2026-11-14"
   },
   {
-   "id": "eur-480407",
-   "source": "euraxess",
-   "kind": "phd",
-   "title": "Predoctoral Researcher (FPI) - J.Selent (FIMIM3348-SELENT)",
-   "org": "Hospital del Mar Research Institute",
-   "place": "Spain",
-   "field": "Medical sciences",
-   "posted": "2026-11-13",
-   "deadline": "2026-11-15",
-   "url": "https://euraxess.ec.europa.eu/jobs/480407",
-   "seen": "2026-11-13"
-  },
-  {
    "id": "eur-480406",
    "source": "euraxess",
    "kind": "phd",
@@ -779,32 +844,6 @@ window.LATEST = {
    "posted": "2026-10-29",
    "deadline": "",
    "url": "https://euraxess.ec.europa.eu/jobs/funding/doctoral-programme-law-italy",
-   "seen": "2026-11-13"
-  },
-  {
-   "id": "eur-research-proposal-scholarships",
-   "source": "euraxess",
-   "kind": "funding",
-   "title": "Research Proposal Scholarships",
-   "org": "Johannes Gutenberg University Mainz",
-   "place": "Germany",
-   "field": "Not funded by a EU programme",
-   "posted": "2026-10-28",
-   "deadline": "",
-   "url": "https://euraxess.ec.europa.eu/jobs/funding/research-proposal-scholarships",
-   "seen": "2026-11-13"
-  },
-  {
-   "id": "eur-33-fully-funded-phd-positions-terra-med-international-doctoral-programme",
-   "source": "euraxess",
-   "kind": "funding",
-   "title": "33 Fully Funded PhD Positions – TERRA-MED International Doctoral Programme",
-   "org": "TERRA-MED – Consortium of Universities and Research Centres in France and Spain",
-   "place": "France",
-   "field": "Horizon Europe - MSCA",
-   "posted": "2026-10-26",
-   "deadline": "",
-   "url": "https://euraxess.ec.europa.eu/jobs/funding/33-fully-funded-phd-positions-terra-med-international-doctoral-programme",
    "seen": "2026-11-13"
   },
   {
@@ -1260,19 +1299,6 @@ window.LATEST = {
    "posted": "",
    "deadline": "",
    "url": "https://emploi.cnrs.fr/Offres/Doctorant/UMR6004-BARPAS-008/Default.aspx?lang=EN",
-   "seen": "2026-11-13"
-  },
-  {
-   "id": "cnrs-UMR7042-NICKAE-003",
-   "source": "cnrs",
-   "kind": "phd",
-   "title": "PhD in molecular chemistry (M/F)",
-   "org": "Laboratoire d'Innovation Moléculaire et Applications",
-   "place": "STRASBOURG, Bas-Rhin, France",
-   "field": "36 months",
-   "posted": "",
-   "deadline": "",
-   "url": "https://emploi.cnrs.fr/Offres/Doctorant/UMR7042-NICKAE-003/Default.aspx?lang=EN",
    "seen": "2026-11-13"
   },
   {
