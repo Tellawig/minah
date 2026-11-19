@@ -1,6 +1,84 @@
 window.LATEST = {
- "updated": "2026-11-18",
+ "updated": "2026-11-19",
  "items": [
+  {
+   "id": "eur-481541",
+   "source": "euraxess",
+   "kind": "funding",
+   "title": "PhD Candidate in Integrative Global Change Biology",
+   "org": "NTNU Norwegian University of Science and Technology",
+   "place": "Norway",
+   "field": "Biological sciences",
+   "posted": "2026-11-19",
+   "deadline": "2027-01-03",
+   "url": "https://euraxess.ec.europa.eu/jobs/481541",
+   "seen": "2026-11-19"
+  },
+  {
+   "id": "eur-481531",
+   "source": "euraxess",
+   "kind": "funding",
+   "title": "PhD Fellow in Law",
+   "org": "UiT The Arctic University of Norway",
+   "place": "Norway",
+   "field": "Juridical sciences",
+   "posted": "2026-11-19",
+   "deadline": "2027-01-31",
+   "url": "https://euraxess.ec.europa.eu/jobs/481531",
+   "seen": "2026-11-19"
+  },
+  {
+   "id": "cnrs-UMR8236-MARHEN-001",
+   "source": "cnrs",
+   "kind": "phd",
+   "title": "PHD position M/F : Thermal and climatic behavior of metallic roofs under heatwave conditions",
+   "org": "Laboratoire Interdisciplinaire des Energies de Demain",
+   "place": "PARIS 13, Paris, France",
+   "field": "36 months",
+   "posted": "",
+   "deadline": "",
+   "url": "https://emploi.cnrs.fr/Offres/Doctorant/UMR8236-MARHEN-001/Default.aspx?lang=EN",
+   "seen": "2026-11-19"
+  },
+  {
+   "id": "cnrs-UMR9012-MARLOU-074",
+   "source": "cnrs",
+   "kind": "phd",
+   "title": "PhD Student (M/F) in Detector Physics",
+   "org": "Laboratoire de physique des 2 infinis - Irène Joliot-Curie",
+   "place": "ORSAY, Essonne, France",
+   "field": "36 months",
+   "posted": "",
+   "deadline": "",
+   "url": "https://emploi.cnrs.fr/Offres/Doctorant/UMR9012-MARLOU-074/Default.aspx?lang=EN",
+   "seen": "2026-11-19"
+  },
+  {
+   "id": "cnrs-UMR7330-NOEGAR-077",
+   "source": "cnrs",
+   "kind": "phd",
+   "title": "M/F PhD Student in coastal geomorphology and coastal modelling.",
+   "org": "Centre de Recherche et d'Enseignement des Géosciences de l'Environnement",
+   "place": "AIX EN PROVENCE, Bouches-du-Rhône, France",
+   "field": "36 months",
+   "posted": "",
+   "deadline": "",
+   "url": "https://emploi.cnrs.fr/Offres/Doctorant/UMR7330-NOEGAR-077/Default.aspx?lang=EN",
+   "seen": "2026-11-19"
+  },
+  {
+   "id": "cnrs-UMR8236-PETCHA-001",
+   "source": "cnrs",
+   "kind": "phd",
+   "title": "PhD position (M/F) Sociotechnical metabolisme of Data Centers",
+   "org": "Laboratoire Interdisciplinaire des Energies de Demain",
+   "place": "PARIS 13, Paris, France",
+   "field": "36 months",
+   "posted": "",
+   "deadline": "",
+   "url": "https://emploi.cnrs.fr/Offres/Doctorant/UMR8236-PETCHA-001/Default.aspx?lang=EN",
+   "seen": "2026-11-19"
+  },
   {
    "id": "eur-481241",
    "source": "euraxess",
@@ -1289,45 +1367,6 @@ window.LATEST = {
    "seen": "2026-11-13"
   },
   {
-   "id": "cnrs-UMR5286-JUSMAL-004",
-   "source": "cnrs",
-   "kind": "phd",
-   "title": "Ph.D. Student in Biology (M/F)",
-   "org": "Centre de recherche en cancérologie de Lyon",
-   "place": "LYON 08, Rhône, France",
-   "field": "36 months",
-   "posted": "",
-   "deadline": "",
-   "url": "https://emploi.cnrs.fr/Offres/Doctorant/UMR5286-JUSMAL-004/Default.aspx?lang=EN",
-   "seen": "2026-11-13"
-  },
-  {
-   "id": "cnrs-UMR5821-CHRVEL-226",
-   "source": "cnrs",
-   "kind": "phd",
-   "title": "PhD Thesis in Molten Salt Reactor Physics (M/F)",
-   "org": "Laboratoire de physique subatomique et de cosmologie",
-   "place": "GRENOBLE, Isère, France",
-   "field": "36 months",
-   "posted": "",
-   "deadline": "",
-   "url": "https://emploi.cnrs.fr/Offres/Doctorant/UMR5821-CHRVEL-226/Default.aspx?lang=EN",
-   "seen": "2026-11-13"
-  },
-  {
-   "id": "cnrs-UMR7314-ANNCHA-051",
-   "source": "cnrs",
-   "kind": "phd",
-   "title": "Thesis: Advanced Modeling and Optimization Using Artificial Intelligence for Dry-Process Electrode Manufacturing (M/F)",
-   "org": "Laboratoire de réactivité et de chimie des solides",
-   "place": "AMIENS, Somme, France",
-   "field": "36 months",
-   "posted": "",
-   "deadline": "",
-   "url": "https://emploi.cnrs.fr/Offres/Doctorant/UMR7314-ANNCHA-051/Default.aspx?lang=EN",
-   "seen": "2026-11-13"
-  },
-  {
    "id": "cnrs-UMR8523-ALEKUD-009",
    "source": "cnrs",
    "kind": "phd",
@@ -1564,60 +1603,6 @@ window.LATEST = {
    "how": {
     "ar": "قدّم عبر نظام القبول في برنامج الدكتوراه بالمعهد (العلاقات الدولية / العلوم السياسية)، واذكر في رسالة الدافع أنك مهتم بهذا المقعد البحثي.",
     "en": "Apply through the Institute's PhD admissions process (International Relations / Political Science) and state your interest in this research position in your motivation letter."
-   },
-   "seen": "2026-11-13"
-  },
-  {
-   "source": "linkedin",
-   "kind": "phd",
-   "org": "Rowan University — Department of Mathematics",
-   "place": "United States",
-   "field": "Applied mathematics",
-   "posted": "",
-   "deadline": "",
-   "id": "li-rowan-biocomp",
-   "title": "PhD Positions in Applied Mathematics — BioComp Group (scientific machine learning, computational biomedicine)",
-   "added": "2026-11-13",
-   "url": "https://guanshengli.com",
-   "how": {
-    "ar": "أرسل بالبريد الإلكتروني إلى المشرف (العنوان في الإعلان وعلى موقعه): السيرة الذاتية، كشوف العلامات، بياناً موجزاً عن اهتمامك البحثي، وأي منشورات أو مشاريع.",
-    "en": "Email the supervisor (address in the call and on his page) your CV, transcripts, a brief statement of research interests and any publications or projects."
-   },
-   "seen": "2026-11-13"
-  },
-  {
-   "source": "linkedin",
-   "kind": "phd",
-   "org": "University of Cagliari, joint degree with RWTH Aachen",
-   "place": "Italy",
-   "field": "Computational biophysics",
-   "posted": "",
-   "deadline": "2026-12-10",
-   "id": "li-elevate-dc10",
-   "title": "ELEVATE (MSCA Doctoral Network) — PhD DC10: physics-based simulations and machine learning for protein dynamics",
-   "added": "2026-11-13",
-   "url": "https://elevate-ejd.eu/apply",
-   "how": {
-    "ar": "قدّم عبر صفحة التقديم الخاصة بالشبكة. البدء في خريف 2027، وتنطبق قاعدة التنقل في برامج ماري كوري.",
-    "en": "Apply through the network's application page. The position starts in autumn 2027 and the MSCA mobility rule applies."
-   },
-   "seen": "2026-11-13"
-  },
-  {
-   "source": "linkedin",
-   "kind": "phd",
-   "org": "Universidad Complutense de Madrid — MedChemLab",
-   "place": "Spain",
-   "field": "Chemistry",
-   "posted": "",
-   "deadline": "2026-12-04",
-   "id": "li-ucm-medchem",
-   "title": "Fully funded 4-year PhD in Medicinal Chemistry and Chemical Biology — targeted therapies against cancer and progeria",
-   "added": "2026-11-13",
-   "url": "https://www.ucm.es/recursos-humanos-de-investigacion-contratos-predoctorales",
-   "how": {
-    "ar": "قدّم عبر منصة التقديم الإلكترونية لجامعة كومبلوتنسي ضمن الإعلان الرسمي رقم CT449/26. يشترط خلفية في الكيمياء وسجل أكاديمي جيد.",
-    "en": "Apply through the UCM online application platform under official call CT449/26. A chemistry background and a good academic record are required."
    },
    "seen": "2026-11-13"
   }
