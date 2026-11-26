@@ -1,6 +1,84 @@
 window.LATEST = {
- "updated": "2026-11-25",
+ "updated": "2026-11-26",
  "items": [
+  {
+   "id": "eur-483275",
+   "source": "euraxess",
+   "kind": "funding",
+   "title": "Scholarship for a Bachelor ́s Degree -Connected Capital",
+   "org": "UNIVERSIDADE DE ÉVORA",
+   "place": "Portugal",
+   "field": "Other",
+   "posted": "2026-11-26",
+   "deadline": "2026-12-11",
+   "url": "https://euraxess.ec.europa.eu/jobs/483275",
+   "seen": "2026-11-26"
+  },
+  {
+   "id": "eur-483274",
+   "source": "euraxess",
+   "kind": "funding",
+   "title": "Research Scholarship of Research Initiation for the scientific area of Electrical, electronic and information engineering - IST/2026/BL221",
+   "org": "Instituto Superior Técnico",
+   "place": "Portugal",
+   "field": "Engineering",
+   "posted": "2026-11-26",
+   "deadline": "2026-12-04",
+   "url": "https://euraxess.ec.europa.eu/jobs/483274",
+   "seen": "2026-11-26"
+  },
+  {
+   "id": "eur-483269",
+   "source": "euraxess",
+   "kind": "funding",
+   "title": "Research Associate (Doctoral Researcher) (f/m/d) for the Priority Programme “New recyclable composites” (SPP 2528)",
+   "org": "University of Bremen",
+   "place": "Germany",
+   "field": "Biological sciences",
+   "posted": "2026-11-26",
+   "deadline": "2026-12-16",
+   "url": "https://euraxess.ec.europa.eu/jobs/483269",
+   "seen": "2026-11-26"
+  },
+  {
+   "id": "eur-483273",
+   "source": "euraxess",
+   "kind": "phd",
+   "title": "COMPETITION FOR Post-Doctoral Fellowship (BPD) (1 opening) - NOVAID.B559",
+   "org": "NOVA.id.FCT- Associação para a Inovação de Desenvolvimento da FCT",
+   "place": "Portugal",
+   "field": "Engineering",
+   "posted": "2026-11-26",
+   "deadline": "2026-12-14",
+   "url": "https://euraxess.ec.europa.eu/jobs/483273",
+   "seen": "2026-11-26"
+  },
+  {
+   "id": "eur-483289",
+   "source": "euraxess",
+   "kind": "phd",
+   "title": "PREDOCTORAL RESEARCHER FOR THE LEMONWURST PROJECT (REF. 26-066-IV00254)",
+   "org": "CENTRO DE INVESTIGACIÓN ECOLÓGICA Y APLICACIONES FORESTALES",
+   "place": "Spain",
+   "field": "Biological sciences",
+   "posted": "2026-11-26",
+   "deadline": "2026-12-06",
+   "url": "https://euraxess.ec.europa.eu/jobs/483289",
+   "seen": "2026-11-26"
+  },
+  {
+   "id": "cnrs-UMR5089-EMMLEF-008",
+   "source": "cnrs",
+   "kind": "phd",
+   "title": "PhD position (M/F) Role of megakaryocytes in post-acute infection syndromes",
+   "org": "Institut de Pharmacologie et Biologie Structurale",
+   "place": "TOULOUSE, Haute-Garonne, France",
+   "field": "36 months",
+   "posted": "",
+   "deadline": "",
+   "url": "https://emploi.cnrs.fr/Offres/Doctorant/UMR5089-EMMLEF-008/Default.aspx?lang=EN",
+   "seen": "2026-11-26"
+  },
   {
    "id": "eur-482964",
    "source": "euraxess",
@@ -1070,45 +1148,6 @@ window.LATEST = {
    "seen": "2026-11-21"
   },
   {
-   "id": "cnrs-UPR3212-YANGOU-001",
-   "source": "cnrs",
-   "kind": "phd",
-   "title": "PhD Position in Neuroscience (M/F)",
-   "org": "Institut des Neurosciences Cellulaires et Intégratives",
-   "place": "STRASBOURG, Bas-Rhin, France",
-   "field": "36 months",
-   "posted": "",
-   "deadline": "",
-   "url": "https://emploi.cnrs.fr/Offres/Doctorant/UPR3212-YANGOU-001/Default.aspx?lang=EN",
-   "seen": "2026-11-21"
-  },
-  {
-   "id": "cnrs-UMR7010-MATFOU-004",
-   "source": "cnrs",
-   "kind": "phd",
-   "title": "PhD in optics and cold atoms (M/F)",
-   "org": "Institut de physique de Nice",
-   "place": "NICE, Alpes-Maritimes, France",
-   "field": "36 months",
-   "posted": "",
-   "deadline": "",
-   "url": "https://emploi.cnrs.fr/Offres/Doctorant/UMR7010-MATFOU-004/Default.aspx?lang=EN",
-   "seen": "2026-11-21"
-  },
-  {
-   "id": "cnrs-UMR9198-SOPFIL-002",
-   "source": "cnrs",
-   "kind": "phd",
-   "title": "Uncoupling Nitrogen Use Efficiency and response to drought by manipulating the CLCa vacuolar nitrate transporter in Arabidopsis (M/F)",
-   "org": "Institut de Biologie Intégrative de la Cellule",
-   "place": "GIF SUR YVETTE, Essonne, France",
-   "field": "36 months",
-   "posted": "",
-   "deadline": "",
-   "url": "https://emploi.cnrs.fr/Offres/Doctorant/UMR9198-SOPFIL-002/Default.aspx?lang=EN",
-   "seen": "2026-11-21"
-  },
-  {
    "id": "cnrs-UMR168-MARVOU-002",
    "source": "cnrs",
    "kind": "phd",
@@ -1580,45 +1619,6 @@ window.LATEST = {
    "posted": "2026-11-20",
    "deadline": "2026-12-07",
    "url": "https://euraxess.ec.europa.eu/jobs/481905",
-   "seen": "2026-11-20"
-  },
-  {
-   "id": "eur-481903",
-   "source": "euraxess",
-   "kind": "phd",
-   "title": "«CÁTEDRA ARRELS: Innovación y gobernanza local para la resiliencia climática. CPI-26-674»",
-   "org": "University of Valencia",
-   "place": "Spain",
-   "field": "Other",
-   "posted": "2026-11-20",
-   "deadline": "2026-12-04",
-   "url": "https://euraxess.ec.europa.eu/jobs/481903",
-   "seen": "2026-11-20"
-  },
-  {
-   "id": "eur-481898",
-   "source": "euraxess",
-   "kind": "phd",
-   "title": "«Biofertilizantes y aguas regeneradas mediante nuevas configuraciones de tecnologías de membranas alternativas (BANCAL). CPI-26-641»",
-   "org": "University of Valencia",
-   "place": "Spain",
-   "field": "Environmental science",
-   "posted": "2026-11-20",
-   "deadline": "2026-12-04",
-   "url": "https://euraxess.ec.europa.eu/jobs/481898",
-   "seen": "2026-11-20"
-  },
-  {
-   "id": "eur-481896",
-   "source": "euraxess",
-   "kind": "phd",
-   "title": "PhD Research Fellow in Tax Law",
-   "org": "University of Stavanger",
-   "place": "Norway",
-   "field": "Other",
-   "posted": "2026-11-20",
-   "deadline": "2027-01-31",
-   "url": "https://euraxess.ec.europa.eu/jobs/481896",
    "seen": "2026-11-20"
   }
  ]
