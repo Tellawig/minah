@@ -1,6 +1,45 @@
 window.LATEST = {
- "updated": "2026-11-26",
+ "updated": "2026-11-27",
  "items": [
+  {
+   "id": "cnrs-UMR7590-FREDAT-004",
+   "source": "cnrs",
+   "kind": "phd",
+   "title": "PhD student (M/F)",
+   "org": "Institut de Minéralogie, de Physique des Matériaux et de Cosmochimie",
+   "place": "PARIS 05, Paris, France",
+   "field": "36 months",
+   "posted": "",
+   "deadline": "",
+   "url": "https://emploi.cnrs.fr/Offres/Doctorant/UMR7590-FREDAT-004/Default.aspx?lang=EN",
+   "seen": "2026-11-27"
+  },
+  {
+   "id": "cnrs-UMR8263-MAXWER-001",
+   "source": "cnrs",
+   "kind": "phd",
+   "title": "PhD in molecular biology (M/F) - Contribution of the 'dark genome' to genomic plasticity, phenotypic diversity, and evolution in yeast",
+   "org": "Développement, Adaptation, Vieillissement",
+   "place": "PARIS 05, Paris, France",
+   "field": "36 months",
+   "posted": "",
+   "deadline": "",
+   "url": "https://emploi.cnrs.fr/Offres/Doctorant/UMR8263-MAXWER-001/Default.aspx?lang=EN",
+   "seen": "2026-11-27"
+  },
+  {
+   "id": "cnrs-UMR7161-KEVVER-001",
+   "source": "cnrs",
+   "kind": "phd",
+   "title": "Doctorant en Informatique/Réseaux (M/F)",
+   "org": "Laboratoire d'Informatique de l'Ecole Polytechnique",
+   "place": "PALAISEAU, Essonne, France",
+   "field": "36 months",
+   "posted": "",
+   "deadline": "",
+   "url": "https://emploi.cnrs.fr/Offres/Doctorant/UMR7161-KEVVER-001/Default.aspx?lang=EN",
+   "seen": "2026-11-27"
+  },
   {
    "id": "eur-483275",
    "source": "euraxess",
@@ -1580,45 +1619,6 @@ window.LATEST = {
    "posted": "2026-11-20",
    "deadline": "2026-12-20",
    "url": "https://euraxess.ec.europa.eu/jobs/481910",
-   "seen": "2026-11-20"
-  },
-  {
-   "id": "eur-481909",
-   "source": "euraxess",
-   "kind": "phd",
-   "title": "PhD Research Fellow in Law",
-   "org": "University of Stavanger",
-   "place": "Norway",
-   "field": "Other",
-   "posted": "2026-11-20",
-   "deadline": "2027-01-31",
-   "url": "https://euraxess.ec.europa.eu/jobs/481909",
-   "seen": "2026-11-20"
-  },
-  {
-   "id": "eur-481907",
-   "source": "euraxess",
-   "kind": "phd",
-   "title": "PhD scholarship in Automating Tomographic Volumetric 3D Printing for Enhanced Precision and Consistency in Part Production (MultiMAM-101309938, DC-2) - DTU Construct",
-   "org": "Technical University Of Denmark",
-   "place": "Denmark",
-   "field": "Engineering",
-   "posted": "2026-11-20",
-   "deadline": "2027-02-05",
-   "url": "https://euraxess.ec.europa.eu/jobs/481907",
-   "seen": "2026-11-20"
-  },
-  {
-   "id": "eur-481905",
-   "source": "euraxess",
-   "kind": "phd",
-   "title": "CALL FOR RECRUITMENT OF ONE PHD RESEARCHER| REFARMING - NORTE2030-FEDER-02719900| Agricultural Sciences",
-   "org": "Faculty of Sciences of the University of Porto",
-   "place": "Portugal",
-   "field": "Agricultural sciences",
-   "posted": "2026-11-20",
-   "deadline": "2026-12-07",
-   "url": "https://euraxess.ec.europa.eu/jobs/481905",
    "seen": "2026-11-20"
   }
  ]
